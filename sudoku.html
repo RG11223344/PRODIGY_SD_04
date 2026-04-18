@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sudoku Solver</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>🧩 Sudoku Solver</h1>
+
+  <p id="timer">Time: 00:00</p>
+
+  <div class="controls">
+    <select id="difficulty">
+      <option value="35">Easy</option>
+      <option value="45">Medium</option>
+      <option value="55">Hard</option>
+    </select>
+    <button onclick="generatePuzzle()">Generate</button>
+    <button onclick="toggleTheme()">🌙 Theme(Dark/Light)</button>
+  </div>
+  
+  <div id="grid"></div>
+  
+  <div class="buttons">
+    <button onclick="solveSudoku()">Solve</button>
+    <button onclick="giveHint()">Hint</button>
+    <button onclick="clearGrid()">Clear</button>
+  </div>
+
+  <h3>🏆 Leaderboard</h3>
+  <ul id="leaderboard"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
